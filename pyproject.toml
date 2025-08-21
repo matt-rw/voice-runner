@@ -1,0 +1,16 @@
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'voice-runner'
+version = '0.1.0'
+description = 'Phrase-to-script runner with offline voice recognition'
+readme = 'README.md'
+license = { text = 'MIT' }
+authors = [{ name='Matthew Wear', email='mrwear12@gmail.com' }]
+dependencies = ['vosk', 'sounddevice']
+requires-python = '>=3.8'
+
+[project.scripts]
+voice-runner = 'voice_runner.cli:main'
